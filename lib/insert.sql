@@ -1,27 +1,27 @@
-INSERT INTO series (title, author_id, sub_genre) VALUES
-("Harry Potter", 1, "Thriller"), ("The Chronicles of Narnia", 2, "Fantasy Fiction");
+INSERT INTO series (id, title, author_id, sub_genre) VALUES
+(1, "Harry Potter", 1, "Thriller"), (2, "The Chronicles of Narnia", 2, "Fantasy Fiction");
 
-INSERT INTO sub_genre (name) VALUES ("Thriller"), ("Fantasy Fiction");
+INSERT INTO sub_genre (id, name) VALUES (1, "Thriller"), (2, "Fantasy Fiction");
 
-INSERT INTO authors (name) VALUES ("J. K. Rowling"), ("C. S. Lewis");
+INSERT INTO authors (id, name) VALUES (1, "J. K. Rowling"), (2, "C. S. Lewis");
 
-INSERT INTO books (title, year, series_id) VALUES
-("Harry Potter and the Chamber of Secrets", 1998, 1),
-("Harry Potter and the Prisoner of Azkaban", 1999, 1),
-("Harry Potter and the Order of the Phoenix", 2003, 1),
-("The Lion, the Witch and the Wardrobe", 1950, 2),
-("The Magician's Nephew", 1955 , 2),
-("The Last Battle", 1956, 2);
+INSERT INTO books (id, title, year, series_id) VALUES
+(1, "Harry Potter and the Chamber of Secrets", 1998, 1),
+(2, "Harry Potter and the Prisoner of Azkaban", 1999, 1),
+(3, "Harry Potter and the Order of the Phoenix", 2003, 1),
+(4, "The Lion, the Witch and the Wardrobe", 1950, 2),
+(5, "The Magician's Nephew", 1955 , 2),
+(6, "The Last Battle", 1956, 2);
 
-name TEXT,motto TEXT,species TEXT,author_id INTEGER,
-series_id INTEGER)
+INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES
+(1, "Harry Potter", "The Wizard Savior", "Wizard", 1, 1),
+(2, "Hermione Granger", "Best Friend of Harry", "Wizard", 1, 1),
+(3, "Ludo Bagman", "Head of Magic", "Wizard", 1, 1),
+(4, "Terry Boot", "Ravenclaw Student", "Wizard", 1, 1),
+(5, "Aslan", "King of Beasts", "Lion", 2, 2),
+(6, "Jadis the White Witch", "Evil Witch", "Witch", 2, 2),
+(7, "Prince Caspian", "King of Narnia", "Human", 2, 2),
+(8, "Susan Pevensie", "Queen Susan the Gentle", "Human", 2, 2);
 
-INSERT INTO characters (name, motto, species, author_id, series_id) VALUES
-("Harry Potter", "The Wizard Savior", "Wizard", 1, 1),
-("Hermione Granger", "Best Friend of Harry", "Wizard", 1, 1),
-("Ludo Bagman", "Head of Magic", "Wizard", 1, 1),
-("Terry Boot", "Ravenclaw Student", "Wizard", 1, 1),
-("Aslan", "King of Beasts", "Lion", 2, 2),
-("Jadis the White Witch", "Evil Witch", "Witch", 2, 2),
-("Prince Caspian", "King of Narnia", "Human", 2, 2),
-("Susan Pevensie", "Queen Susan the Gentle", "Human", 2, 2);
+INSERT INTO character_books (characters_id, books_id) VALUES
+()
