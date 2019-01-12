@@ -23,5 +23,6 @@ INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES
 (7, "Prince Caspian", "King of Narnia", "Human", 2, 2),
 (8, "Susan Pevensie", "Queen Susan the Gentle", "Human", 2, 2);
 
-INSERT INTO character_books (characters_id, books_id) VALUES
-()
+INSERT INTO character_books (id, characters_id, books_id) VALUES
+(1, 1, (1, 2, 3)), (2, 2, (1, 2, 3)), (3, 3, 1), (4, 4, 3),
+(5, 5, (4, 5, 6)), (6, 6, (4, 5, 6)), (7, 7, 4), (8, 8, 6);
