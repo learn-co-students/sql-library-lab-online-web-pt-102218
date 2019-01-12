@@ -1,7 +1,7 @@
-INSERT INTO series (id, title, author_id, sub_genre) VALUES
-(1, "Harry Potter", 1, "Thriller"), (2, "The Chronicles of Narnia", 2, "Fantasy Fiction");
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES
+(1, "Harry Potter", 1, 1), (2, "The Chronicles of Narnia", 2, 2);
 
-INSERT INTO sub_genre (id, name) VALUES (1, "Thriller"), (2, "Fantasy Fiction");
+INSERT INTO subgenres (id, name) VALUES (1, "Thriller"), (2, "Fantasy Fiction");
 
 INSERT INTO authors (id, name) VALUES (1, "J. K. Rowling"), (2, "C. S. Lewis");
 
@@ -23,6 +23,6 @@ INSERT INTO characters (id, name, motto, species, author_id, series_id) VALUES
 (7, "Prince Caspian", "King of Narnia", "Human", 2, 2),
 (8, "Susan Pevensie", "Queen Susan the Gentle", "Human", 2, 2);
 
-INSERT INTO character_books (id, characters_id, books_id) VALUES
+INSERT INTO character_books (id, character_id, book_id) VALUES
 (1, 1, (1, 2, 3)), (2, 2, (1, 2, 3)), (3, 3, 1), (4, 4, 3),
 (5, 5, (4, 5, 6)), (6, 6, (4, 5, 6)), (7, 7, 4), (8, 8, 6);

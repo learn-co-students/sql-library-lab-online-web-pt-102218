@@ -2,7 +2,7 @@
     id INTEGER PRIMARY KEY,
     title TEXT,
     author_id INTEGER,
-    sub_genre TEXT);
+    subgenre_id INTEGER);
 
   CREATE TABLE characters (
     id INTEGER PRIMARY KEY,
@@ -22,11 +22,11 @@
     id INTEGER PRIMARY KEY,
     name TEXT);
 
-  CREATE TABLE sub_genre (
+  CREATE TABLE subgenres (
     id INTEGER PRIMARY KEY,
     name TEXT);
 
   CREATE TABLE character_books (
     id INTEGER PRIMARY KEY,
-    characters_id INTEGER,
-    books_id INTEGER);
+    character_id INTEGER,
+    book_id INTEGER);
